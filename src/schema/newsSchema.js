@@ -1,0 +1,1 @@
+//Define the data structure and validate the data against that structure using the Joi library.
