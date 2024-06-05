@@ -1,5 +1,7 @@
+import Joi from 'joi';
+
 import { artigosPrincipais, artigosSecundarios, noticiasDetalhes } from '../data.js';
-import { artigoSchema } from '../schemas/newsSchema.js';
+import { artigoSchema } from '../schema/newsSchema.js';
 
 const validateArtigos = (artigos) => {
     const { error, value } = Joi.array().items(artigoSchema).validate(artigos, { abortEarly: false });
